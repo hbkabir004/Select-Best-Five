@@ -1,0 +1,21 @@
+h1 {
+  font-family: "Berkshire Swash", cursive;
+  color: #ff5e19;
+}
+
+.bg {
+  background-image: url(./images/bg.png);
+  background-size: cover;
+  overflow: hidden;
+  height: 600px;
+}
+
+.marker {
+  /* left: 64.13%;
+right: 22.57%;
+top: 7.37%;
+bottom: 89.12%; */
+
+  background: #ffffff;
+  transform: matrix(0.96, 0.31, -0.29, 0.95, 0, 0);
+}
