@@ -31,7 +31,7 @@
     </header>
     <main>
       <section class="flex">
-        <section class="w-2/3 grid grid-cols-3 gap-5 mx-16 my-12">
+        <section id="players" class="w-2/3 grid grid-cols-3 gap-5 mx-16 my-12">
           <div
             class="max-w-sm bg-white rounded border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 pb-8"
           >
@@ -40,7 +40,7 @@
             <div>
               <div class="p-5 text-center">
                 <h5
-                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                  class="names mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
                 >
                   Lionel Messi
                 </h5>
@@ -49,7 +49,7 @@
                 </p>
               </div>
               <button
-                href="#"
+                onclick="getPlayerName(this)"
                 class="flex mx-auto items-center justify-center py-3 px-20 text-sm font-medium text-center text-white bg-blue-700 rounded hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 SELECT
@@ -69,7 +69,7 @@
             <div>
               <div class="p-5 text-center">
                 <h5
-                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                  class="names mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
                 >
                   Gianluigi Donnarumma
                 </h5>
@@ -78,7 +78,7 @@
                 </p>
               </div>
               <button
-                href="#"
+                onclick="getPlayerName(this)"
                 class="flex mx-auto items-center justify-center py-3 px-20 text-sm font-medium text-center text-white bg-blue-700 rounded hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 SELECT
@@ -99,7 +99,7 @@
             <div>
               <div class="p-5 text-center">
                 <h5
-                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                  class="names mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
                 >
                   Kylian Mbappé
                 </h5>
@@ -108,7 +108,7 @@
                 </p>
               </div>
               <button
-                href="#"
+                onclick="getPlayerName(this)"
                 class="flex mx-auto items-center justify-center py-3 px-20 text-sm font-medium text-center text-white bg-blue-700 rounded hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 SELECT
@@ -128,7 +128,7 @@
             <div>
               <div class="p-5 text-center">
                 <h5
-                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                  class="names mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
                 >
                   Sergio Ramos
                 </h5>
@@ -137,7 +137,7 @@
                 </p>
               </div>
               <button
-                href="#"
+                onclick="getPlayerName(this)"
                 class="flex mx-auto items-center justify-center py-3 px-20 text-sm font-medium text-center text-white bg-blue-700 rounded hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 SELECT
@@ -157,7 +157,7 @@
             <div>
               <div class="p-5 text-center">
                 <h5
-                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                  class="names mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
                 >
                   Keylor Navas
                 </h5>
@@ -166,7 +166,7 @@
                 </p>
               </div>
               <button
-                href="#"
+                onclick="getPlayerName(this)"
                 class="flex mx-auto items-center justify-center py-3 px-20 text-sm font-medium text-center text-white bg-blue-700 rounded hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 SELECT
@@ -187,7 +187,7 @@
             <div>
               <div class="p-5 text-center">
                 <h5
-                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                  class="names mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
                 >
                   Marquinhos
                 </h5>
@@ -196,7 +196,7 @@
                 </p>
               </div>
               <button
-                href="#"
+                onclick="getPlayerName(this)"
                 class="flex mx-auto items-center justify-center py-3 px-20 text-sm font-medium text-center text-white bg-blue-700 rounded hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 SELECT
@@ -216,7 +216,7 @@
             <div>
               <div class="p-5 text-center">
                 <h5
-                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                  class="names mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
                 >
                   Vitinha
                 </h5>
@@ -225,7 +225,7 @@
                 </p>
               </div>
               <button
-                href="#"
+                onclick="getPlayerName(this)"
                 class="flex mx-auto items-center justify-center py-3 px-20 text-sm font-medium text-center text-white bg-blue-700 rounded hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 SELECT
@@ -245,7 +245,7 @@
             <div>
               <div class="p-5 text-center">
                 <h5
-                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                  class="names mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
                 >
                   Achraf Hakimi
                 </h5>
@@ -254,7 +254,7 @@
                 </p>
               </div>
               <button
-                href="#"
+                onclick="getPlayerName(this)"
                 class="flex mx-auto items-center justify-center py-3 px-20 text-sm font-medium text-center text-white bg-blue-700 rounded hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 SELECT
@@ -274,7 +274,7 @@
             <div>
               <div class="p-5 text-center">
                 <h5
-                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                  class="names mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
                 >
                   Marco Verratti
                 </h5>
@@ -283,7 +283,7 @@
                 </p>
               </div>
               <button
-                href="#"
+                onclick="getPlayerName(this)"
                 class="flex mx-auto items-center justify-center py-3 px-20 text-sm font-medium text-center text-white bg-blue-700 rounded hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 SELECT
@@ -296,13 +296,10 @@
             <h3 class="text-3xl text-white text-center pt-5 my-12 underline">
               Selected - V
             </h3>
-            <ol class="text-gray-500 font-bold pb-10 mx-16 text-3xl">
-              <li class="my-8">1. <span></span></li>
-              <li class="my-8">2. <span></span></li>
-              <li class="my-8">3. <span></span></li>
-              <li class="my-8">4. <span></span></li>
-              <li class="my-8">5. <span></span></li>
-            </ol>
+            <ol
+              id="selected"
+              class="text-gray-500 font-bold pb-10 mx-16 text-3xl"
+            ></ol>
           </div>
 
           <div class="bg-black text-white">
@@ -404,7 +401,7 @@
     <footer>
       <hr />
       <p class="text-white text-center my-8">
-        Copyright @ 2022 All Rights Reserved.
+        Copyright 2022 | @Aungstrome All Rights Reserved.
       </p>
     </footer>
   </body>
