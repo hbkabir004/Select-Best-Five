@@ -20,21 +20,24 @@ document.getElementById('btn-calculate-total').addEventListener('click', functio
     document.getElementById('total').innerText = totalCost;
 })
 
-// let saveButtons = document.getElementsByClassName('btn-select');
-// for( const button of saveButtons){
-//     button.addEventListener('click', function(){
-//         const selected = document.getElementById('selected');
-//         // const newPlayer = document.createElement('li');
-//         const names = document.getElementsByClassName('names');
-//         for(let i = 0; i<names.length; i++){
-//             // name.innerText = newPlayer.innerText;
-//             // selected.appendChild(newPlayer);
-//             console.log(names[0]);
-//         }
 
-//     })
-// }
-
+const playerArray = [];
 function getPlayerName(element){
     const playerName = element.parentNode.parentNode.children[1].children[0].children[0].innerText;
+    const selected = document.getElementById('selected');
+
+    playerArray.push(playerName);
+    selected.innerHTML='';
+    
+    let number= playerArray.length;
+    number=1;
+    for(const player of playerArray){
+        // console.log(player);
+        const li = document.createElement('li');
+        li.innerHTML = `
+        ${number}. <span>${player}</span>
+        `;
+        selected.appendChild(li);
+        number++;
+    }
 }
