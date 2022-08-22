@@ -23,6 +23,8 @@ document.getElementById('btn-calculate-total').addEventListener('click', functio
 
 const playerArray = [];
 function getPlayerName(element){
+    element.disabled = true;
+    
     const playerName = element.parentNode.parentNode.children[1].children[0].children[0].innerText;
     const selected = document.getElementById('selected');
 
@@ -32,12 +34,17 @@ function getPlayerName(element){
     let number= playerArray.length;
     number=1;
     for(const player of playerArray){
-        // console.log(player);
         const li = document.createElement('li');
         li.innerHTML = `
-        ${number}. <span>${player}</span>
+        ${number}. &emsp;<span>${player}</span>
         `;
+        if(playerArray.length > 5 ){
+            alert('SELECTED-V Full!');
+            break;
+        }
         selected.appendChild(li);
         number++;
+        
     }
+    
 }
