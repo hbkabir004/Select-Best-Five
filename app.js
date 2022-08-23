@@ -3,7 +3,13 @@ function getPlayerExpenses(){
     const perPlayerCost = parseInt(perPlayer.value);
     const playerExpenses = perPlayerCost * 5;
 
-    return playerExpenses;
+    if(isNaN(playerExpenses)){
+        alert('Enter a Number')
+    }
+    else{
+        return playerExpenses;
+    }
+
 }
 
 document.getElementById('btn-calculate').addEventListener('click', function(){
@@ -17,7 +23,13 @@ document.getElementById('btn-calculate-total').addEventListener('click', functio
     const coachCost = parseInt(coach.value);
 
     const totalCost = getPlayerExpenses() + managerCost + coachCost;
-    document.getElementById('total').innerText = totalCost;
+    
+    if(isNaN(totalCost)){
+        alert('Enter a Number');
+    }
+    else{
+        document.getElementById('total').innerText = totalCost;
+    }
 })
 
 
@@ -40,7 +52,7 @@ function getPlayerName(element){
         `;
         if(playerArray.length > 5 ){
             alert('SELECTED-V Full!');
-            break;
+            return;
         }
         selected.appendChild(li);
         number++;
