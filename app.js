@@ -3,17 +3,17 @@ function getPlayerExpenses(){
     const perPlayerCost = parseInt(perPlayer.value);
     const playerExpenses = perPlayerCost * 5;
 
-    if(isNaN(playerExpenses)){
-        alert('Enter a Number')
-    }
-    else{
-        return playerExpenses;
-    }
+    return playerExpenses;
 
 }
 
 document.getElementById('btn-calculate').addEventListener('click', function(){
-    document.getElementById('player-expenses').innerText = getPlayerExpenses();
+    if(isNaN(getPlayerExpenses())){
+        return alert('Enter a Number');;
+    }
+    else{
+        document.getElementById('player-expenses').innerText = getPlayerExpenses();
+    }
 })
 
 document.getElementById('btn-calculate-total').addEventListener('click', function(){
